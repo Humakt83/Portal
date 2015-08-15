@@ -35,8 +35,7 @@ body {
 
 .portal-image-links-half img {
 	width: 90%;
-	max-width: 700px;
-	max-height: 460px;	
+	max-width: 90%;
 	border: 5px solid;
 	border-color: rgb(240, 240, 50);
 	border-radius: 15px;
@@ -61,8 +60,7 @@ body {
 
 .portal-image-links-third img {
 	width: 95%;
-	max-width: 600px;
-	max-height: 400px;
+	max-width: 95%;
 	border: 5px solid;
 	border-color: rgb(240, 240, 50);
 	border-radius: 15px;
