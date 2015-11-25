@@ -10,26 +10,30 @@ body {
 }
 
 .portal-image-links-row img {
-	-webkit-filter: sepia(100%);
-	-moz-filter: sepia(100%);
-	-o-filter: sepia(100%);
-	filter: sepia(100%);
+	-webkit-filter: sepia(100%) brightness(0.8);
+	filter: sepia(100%) brightness(0.8);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);	
+	-webkit-transition: 500ms -webkit-filter linear, -webkit-transform 500ms linear;
+	transition: 500ms -webkit-filter linear, transform 500ms linear;
+}
+
+@-moz-document url-prefix() {
+	.portal-image-links-row img {
+		transition: 500ms filter linear, transform 500ms linear;
+	}
 }
 
 .portal-image-links-row img:hover {
-	-webkit-filter: sepia(0%);
-	-moz-filter: sepia(0%);
-	-o-filter: sepia(0%);
-	filter: sepia(0%);
-	-webkit-transition: 500ms -webkit-filter linear;
-	-moz-transition: 500ms -moz-filter linear;
-	-o-transition: 500s -o-filter linear;
-	transition: 500ms filter linear;
-	transition: 500ms -webkit-filter linear;
+	-webkit-filter: sepia(0%) brightness(1);
+	filter: sepia(0%) brightness(1);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 .portal-image-links-half {
 	width: 50%;
+	min-width: 50%;
 	float: left;
 }
 
