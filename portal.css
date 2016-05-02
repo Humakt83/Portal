@@ -14,13 +14,13 @@ body {
 	filter: sepia(100%) brightness(0.8);
 	-webkit-transform: rotate(1deg);
 	transform: rotate(1deg);	
-	-webkit-transition: 500ms -webkit-filter linear, -webkit-transform 500ms linear;
-	transition: 500ms -webkit-filter linear, transform 500ms linear;
+	-webkit-transition: 250ms -webkit-filter linear, -webkit-transform 250ms linear;
+	transition: 250ms -webkit-filter linear, transform 250ms linear;
 }
 
 @-moz-document url-prefix() {
 	.portal-image-links-row img {
-		transition: 500ms filter linear, transform 500ms linear;
+		transition: 250ms filter linear, transform 250ms linear;
 	}
 }
 
