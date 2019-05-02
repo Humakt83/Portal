@@ -2,79 +2,48 @@ body {
 	background-color: rgb(0, 0, 80);
 }
 
-.portal-image-links-row {
-	width: 95%;
-	padding: 5px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+#sitesContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 30vw);
+	grid-template-rows: auto;
+	justify-items: center;
+	justify-content: space-between;
+	grid-row-gap: 1.5rem;
+	max-width: 96%;
+	text-align: center;
+	margin: auto;
 }
 
-.portal-image-links-row img {
-	-webkit-filter: sepia(100%) brightness(0.8);
-	filter: sepia(100%) brightness(0.8);
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);	
-	-webkit-transition: 250ms -webkit-filter linear, -webkit-transform 250ms linear;
-	transition: 250ms -webkit-filter linear, transform 250ms linear;
+img {
+	border-radius: 2%;
+	border: 12px solid midnightblue;
+	filter: sepia(100%);
+	transition: filter 500ms ease-in-out;
+	width: 100%;
 }
 
-@-moz-document url-prefix() {
-	.portal-image-links-row img {
-		transition: 250ms filter linear, transform 250ms linear;
+img:hover {
+	filter: sepia(0);
+}
+
+@media (max-width: 1000px) {
+	#sitesContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 40vw);
+		grid-template-rows: auto;
+		justify-items: center;
+		justify-content: space-around;
+		grid-row-gap: 1.5rem;
 	}
 }
 
-.portal-image-links-row img:hover {
-	-webkit-filter: sepia(0%) brightness(1);
-	filter: sepia(0%) brightness(1);
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-
-.portal-image-links-half {
-	width: 50%;
-	min-width: 50%;
-	float: left;
-}
-
-.portal-image-links-half img {
-	width: 90%;
-	max-width: 90%;
-	border: 5px solid;
-	border-color: rgb(240, 240, 50);
-	border-radius: 15px;
-	margin-left: 3px;
-	margin-right: 3px;
-}
-
-.right {
-	text-align: right;
-	right: 3px;
-}
-
-.left {
-	text-align: left;
-	left: 3px;
-}
-
-.portal-image-links-third {
-	width: 33%;
-	float: left;
-}
-
-.portal-image-links-third img {
-	width: 95%;
-	max-width: 95%;
-	border: 5px solid;
-	border-color: rgb(240, 240, 50);
-	border-radius: 15px;
-	margin-left: 3px;
-	margin-right: 3px;
-}
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+@media (max-width: 500px) {
+	#sitesContainer {
+		display: grid;
+		grid-template-columns: 90vw;
+		grid-template-rows: auto;
+		justify-items: center;
+		justify-content: space-between;
+		grid-row-gap: 0.5rem;
+	}
 }
