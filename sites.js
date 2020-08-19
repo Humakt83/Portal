@@ -3,6 +3,7 @@ const SITES = [
   {name: 'Collector', url: 'collector/', image: 'Collector'},
   {name: 'Vue-Rougelite', url: 'https://humakt83.github.io/vue-rougelite/example/dist/index.html', image: 'Rougelite'},
   {name: 'Emopairs', url: 'emopairs/', image: 'Emopairs'},
+  {name: 'Treasure Hunt', url: 'treasurehunt', image: 'Treasurehunt'},
   {name: 'Thundermaps', url: 'http://www.celestialheavens.com/thundermaps/', image: 'Thundermaps'},
   {name: 'NG2-Sweeper', url: 'ng2sweeper/', image: 'ng2sweeper'},
   {name: 'Angular Chess', url: 'ngchess/', image: 'ngchess'},
